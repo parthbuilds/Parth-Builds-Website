@@ -1,83 +1,60 @@
 <?php
 
-//Import the PHPMailer class into the global namespace
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-//Sending Email from Local Web Server using PHPMailer			
 require 'phpmailer/src/PHPMailer.php';
 require 'phpmailer/src/Exception.php';
+require 'phpmailer/src/SMTP.php'; // Always include this for SMTP
 
-//Create a new PHPMailer instance
 $mail = new PHPMailer();
 $mail->CharSet = 'UTF-8';
-$isSmtp = true;
 
-if ($isSmtp) {
+// Use SMTP
+$mail->isSMTP();
+$mail->SMTPDebug = 0; // 0 for production
+$mail->Debugoutput = 'html';
 
-    require 'phpmailer/src/SMTP.php';
-
-    //Tell PHPMailer to use SMTP
-    $mail->isSMTP();
-
-    //Enable SMTP debugging
-    $mail->SMTPDebug = 0;
-
-    //Ask for HTML-friendly debug output
-    $mail->Debugoutput = 'html';
-
-    //Set the hostname of the mail server
-    $mail->Host = 'mail.test.com';
-
-    //Set the SMTP port number - likely to be 25, 465 or 587
-    $mail->Port = 587;
-
-    //Whether to use SMTP authentication
-    $mail->SMTPAuth = true;
-
-    //Username to use for SMTP authentication
-    $mail->Username = 'info@test.com';
-
-    //Password to use for SMTP authentication
-    $mail->Password = '123456';
-
-}
+// Gmail SMTP configuration
+$mail->Host = 'smtp.gmail.com';
+$mail->Port = 465; // Use 465 with SSL or 587 with TLS
+$mail->SMTPSecure = 'ssl'; // For 465, use 'ssl'; for 587, use 'tls'
+$mail->SMTPAuth = true;
+$mail->Username = 'parthbuilds@gmail.com'; // Your Gmail address
+$mail->Password = 'phirbhoolgya@100';
 
 // Form Fields Value Variables
-$name = filter_var($_POST['name'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-$email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
-$subject = filter_var($_POST['subject'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-$phone = filter_var($_POST['phone'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-$message = filter_var($_POST['message'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+$name = htmlspecialchars($_POST['name']);
+$email = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
+$subject = htmlspecialchars($_POST['subject']);
+$phone = htmlspecialchars($_POST['phone']);
+$message = htmlspecialchars($_POST['message']);
 $message = nl2br($message);
 
-//From email address and name (Change here)
-$mail->From = $email;
+// From email address and name
+$mail->From = 'parthbuilds@gmail.com'; // Use your authenticated email
 $mail->FromName = $name;
 
-//Set who the message is to be sent to
-$mail->addAddress('demo@test.com');
+// Recipient
+$mail->addAddress('parthbuilds@gmail.com');
 
-//Set an alternative reply-to address
+// Reply-to
 $mail->addReplyTo($email, $name);
 
-//Send HTML or Plain Text email
+// Email format
 $mail->isHTML(true);
-
-// Message Body
 $body_message = "Name: " . $name . "<br>";
-$body_subject .= "Subject: " . $subject . "<br>";
+$body_message .= "Subject: " . $subject . "<br>";
 $body_message .= "Email: " . $email . "<br>";
-$body_message .= "\n\n" . $message;
+$body_message .= "Message: " . nl2br($message) . "<br>";
 
-//Set the subject & Body Text
+// Email subject and body
 $mail->Subject = "New Message from $name";
 $mail->Body = $body_message;
 
-//send the message, check for errors
+// Send email
 if (!$mail->send()) {
     echo 'Mailer Error: ' . $mail->ErrorInfo;
 } else {
     echo 'Message sent!';
 }
-
