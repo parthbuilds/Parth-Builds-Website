@@ -21,7 +21,7 @@ $mail->Port = 465; // Use 465 with SSL or 587 with TLS
 $mail->SMTPSecure = 'ssl'; // For 465, use 'ssl'; for 587, use 'tls'
 $mail->SMTPAuth = true;
 $mail->Username = 'parthbuilds@gmail.com'; // Your Gmail address
-$mail->Password = 'phirbhoolgya@100';
+$mail->Password = '';
 
 // Form Fields Value Variables
 $name = htmlspecialchars($_POST['name']);
