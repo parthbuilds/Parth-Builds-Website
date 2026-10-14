@@ -25,7 +25,7 @@
 
 
     <!-- Style CSS -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css?v=14" />
 
 </head>
 
@@ -38,9 +38,11 @@
 
                 <div class="flex-1 flex items-center justify-between">
 
-                    <h3 class="text-black-800 font-bold font-Syne text-2xl">
-                        Parth Builds
-                    </h3>
+                    <a href="index.html">
+                        <h3 class="text-black-800 font-bold font-Syne text-2xl">
+                            Parth Builds
+                        </h3>
+                    </a>
 
                     <!-- Link Start -->
                     <a href="contact.html" class="flex items-center flex-wrap py-[6px] px-3 text-[15px] font-bold text-active leading-none mr-2 transition-all duration-300 hover:text-orange group">Let’s
@@ -81,9 +83,11 @@
 
             <div>
                 <div class="flex flex-wrap justify-between items-center border-b border-border-white mb-[80px]">
-                    <h3 class="text-white font-bold font-Syne text-2xl">
-                        Parth Builds
-                    </h3>
+                    <a href="index.html">
+                        <h3 class="text-white font-bold font-Syne text-2xl">
+                            Parth Builds
+                        </h3>
+                    </a>
                     <button id="offcanvas-close" class="offcanvas-close bg-primary py-7 px-[38px]" aria-label="offcanvas">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M19.2803 4.71967C19.5732 5.01256 19.5732 5.48744 19.2803 5.78033L5.78033 19.2803C5.48744 19.5732 5.01256 19.5732 4.71967 19.2803C4.42678 18.9874 4.42678 18.5126 4.71967 18.2197L18.2197 4.71967C18.5126 4.42678 18.9874 4.42678 19.2803 4.71967Z" fill="white" />
@@ -200,56 +204,57 @@
         <!-- Header end -->
 
         <!-- Hero Section Start -->
-        <section class="bg-secondary pt-20">
+        <section class="pt-20" style="background-color: #FFF0E6;">
             <div class="max-w-[1075px] mx-auto px-4 xl:px-0" data-aos="flip-down" data-aos-delay="300">
                 <div class="grid grid-cols-1 lg:grid-cols-2 pb-12">
                     <div class="mb-10">
                         <ul class="flex flex-wrap text-sm font-normal font-Inter leading-tight">
                             <li class="relative z-[1] before:rounded-full before:bg-black-800 before:block before:absolute before:top-[50%] before:translate-y-[-50%] before:left-[8px] before:-z-[1] before:w-[6px] before:h-[6px] pl-[20px]">
-                                <a class="text-black-text-800" href="#">UI Design</a>
+                                <a id="project-category-tag" class="text-black-text-800" href="projects.html">Concept Jewellery Store</a>
                             </li>
                             <li class="relative z-[1] before:rounded-full before:bg-orange before:block before:absolute before:top-[50%] before:translate-y-[-50%] before:left-[8px] before:-z-[1] before:w-[6px] before:h-[6px] pl-[20px] ml-[10px]">
-                                <a class="text-orange" href="#">03 May 2019</a>
+                                <a id="project-date-tag" class="text-orange" href="#">Active Project</a>
                             </li>
-
                         </ul>
 
-                        <h4 class="text-black-800 font-bold font-Syne leading-snug text-[32px] lg:text-[44px]">
-                            Mendero fintech dashboard design
+                        <h4 id="project-title" class="text-black-800 font-bold font-Syne leading-snug text-[32px] lg:text-[44px]">
+                            Chandi Gharana
                         </h4>
+                        <p id="project-tagline" class="text-black-text-800 font-normal font-Inter mt-2 text-base">
+                            Luxury Silver & Concept Jewellery Store Experience
+                        </p>
                     </div>
                     <ul class="flex flex-wrap gap-y-6 lg:gap-y-0">
                         <li class="flex flex-wrap flex-col gap-2 w-3/6 sm:w-1/3">
-                            <span
-                                class="text-black-text-800 text-sm font-normal font-Inter leading-tight">Client</span>
-                            <h2 class="text-black-800 text-[15px] font-bold font-sans leading-none">Mashorom</h2>
+                            <span class="text-black-text-800 text-sm font-normal font-Inter leading-tight">Client</span>
+                            <h2 id="project-client" class="text-black-800 text-[15px] font-bold font-sans leading-none">Chandi Gharana</h2>
                         </li>
                         <li class="flex flex-wrap flex-col gap-2 w-3/6 sm:w-1/3">
-                            <span
-                                class="text-black-text-800 text-sm font-normal font-Inter leading-tight">Category</span>
-                            <h4 class="text-black-800 text-[15px] font-bold font-sans leading-none">User Experience
-                            </h4>
+                            <span class="text-black-text-800 text-sm font-normal font-Inter leading-tight">Category</span>
+                            <h4 id="project-category" class="text-black-800 text-[15px] font-bold font-sans leading-none">Concept Jewellery</h4>
                         </li>
                         <li class="flex flex-wrap flex-col gap-2 w-3/6 sm:w-1/3">
-                            <span
-                                class="text-black-text-800 text-sm font-normal font-Inter leading-tight">Tools</span>
-                            <h4 class="text-black-800 text-[15px] font-bold font-sans leading-none">Figma, Webflow
-                            </h4>
+                            <span class="text-black-text-800 text-sm font-normal font-Inter leading-tight">Tools</span>
+                            <h4 id="project-tools" class="text-black-800 text-[15px] font-bold font-sans leading-none">Next.js, Tailwind CSS</h4>
                         </li>
                         <li class="flex flex-wrap flex-col gap-2 w-3/6 sm:w-1/3">
-                            <span class="text-black-text-800 text-sm font-normal font-Inter leading-tight">Start
-                                date</span>
-                            <h4 class="text-black-800 text-[15px] font-bold font-sans leading-none">09/01/ 2020</h4>
+                            <span class="text-black-text-800 text-sm font-normal font-Inter leading-tight">Role</span>
+                            <h4 id="project-role" class="text-black-800 text-[15px] font-bold font-sans leading-none">Website Design & Dev</h4>
                         </li>
                         <li class="flex flex-wrap flex-col gap-2 w-3/6 sm:w-1/3">
-                            <span class="text-black-text-800 text-sm font-normal font-Inter leading-tight">End
-                                date</span>
-                            <h4 class="text-black-800 text-[15px] font-bold font-sans leading-none">09/01/ 2020</h4>
+                            <span class="text-black-text-800 text-sm font-normal font-Inter leading-tight">Status</span>
+                            <h4 id="project-status" class="text-black-800 text-[15px] font-bold font-sans leading-none">Active Project</h4>
                         </li>
                     </ul>
                 </div>
+
+                <!-- Action Buttons: Visit Live Website & Instagram Links -->
+                <div id="project-actions" class="flex flex-wrap gap-4 items-center mb-8">
+                    <!-- Dynamic live website and social buttons populated by JS -->
+                </div>
+
                 <div class="grid grid-cols-1 mb-12">
-                    <img class="w-full rounded-[20px]" src="assets/images/blog-details/banner.png" alt="banner">
+                    <img id="project-banner" class="w-full project-detail-banner" style="max-height: 360px; object-fit: cover;" src="assets/images/portfolios/project8.png" alt="Chandi Gharana banner">
                 </div>
             </div>
         </section>
@@ -261,73 +266,218 @@
                 <div class="grid grid-cols-1">
 
                     <h3 class="text-[32px] font-bold font-Syne leading-10 mb-4">Overview</h3>
-                    <p class="paragraph mb-12">Minimalism combined with elements of french typography and brutalism
-                        helped us to realize the
-                        site exactly as we imagined with the client at the beginning: visually restrained, but
-                        stylish.
-                        Informative and pleasant to use, with an elegant aftertaste of a serious financial
-                        institution.
-                        Combined with elements of french typography and visually restrained, but stylish.
-                        Informative
-                        and pleasant to use, with an elegant aftertaste of a serious financial institutional client,
-                        and
-                        close collaboration.</p>
-                    <p class="paragraph mb-12">That is where I come in. A lover of words, a wrangler of copy. Here
-                        to
-                        create copy that not only
-                        reflects who you are and what you stand for, but words that truly land with those that read
-                        them, calling your audience in and making them want more.</p>
-                    <ul class="text-black-800 text-xl font-bold font-Syne mb-12">
-                        <li class="relative z-[1] before:bg-black-800 before:block before:absolute before:top-[50%] before:translate-y-[-50%] before:left-4 before:-z-[1] before:w-[6px] before:h-[6px] pl-10">
-                            Advantage</li>
-                        <li class="relative z-[1] before:bg-black-800 before:block before:absolute before:top-[50%] before:translate-y-[-50%] before:left-4 before:-z-[1] before:w-[6px] before:h-[6px] pl-10">
-                            Accomplished</li>
-                        <li class="relative z-[1] before:bg-black-800 before:block before:absolute before:top-[50%] before:translate-y-[-50%] before:left-4 before:-z-[1] before:w-[6px] before:h-[6px] pl-10">
-                            Marketplace startups</li>
-                        <li class="relative z-[1] before:bg-black-800 before:block before:absolute before:top-[50%] before:translate-y-[-50%] before:left-4 before:-z-[1] before:w-[6px] before:h-[6px] pl-10">
-                            SaaS startups</li>
+                    <div id="project-overview-content" class="mb-12">
+                        <p class="paragraph mb-6">Chandi Gharana is a premier concept jewellery boutique specializing in bespoke silver craftsmanship and contemporary adornments.</p>
+                    </div>
+
+                    <h3 class="text-[32px] font-bold font-Syne leading-10 mb-4">Key Deliverables & Features</h3>
+                    <ul id="project-features-list" class="text-black-800 text-xl font-bold font-Syne mb-12">
+                        <li class="relative z-[1] before:bg-black-800 before:block before:absolute before:top-[50%] before:translate-y-[-50%] before:left-4 before:-z-[1] before:w-[6px] before:h-[6px] pl-10 mb-3">Artisanal concept jewelry showcase with high-res product galleries</li>
+                        <li class="relative z-[1] before:bg-black-800 before:block before:absolute before:top-[50%] before:translate-y-[-50%] before:left-4 before:-z-[1] before:w-[6px] before:h-[6px] pl-10 mb-3">Integrated Instagram discovery feed connecting real-time social drops</li>
                     </ul>
 
-                    <h3 class="text-[32px] font-bold font-Syne leading-10 mb-4">Typography</h3>
-                    <p class="paragraph mb-12">
-                        The basic idea was to find a balance between the thin, wispy sans-serif used to indicate a
-                        ‘futuristic‘ tone, and a bold, masculine font synonymous with ‘construction‘. We came up
-                        with
-                        something in the middle, leaning towards lighter-weighted fonts, but still with a hint of
-                        that
-                        blocky ‘construction’ vibe. We use Chaney for general display and when we want to drive
-                        attention to the content, and the technical and geometric Sora font for the body copy and
-                        paste
-                        overall hierachy.
-                    </p>
+                    <h3 class="text-[32px] font-bold font-Syne leading-10 mb-4">Technical Execution & Architecture</h3>
+                    <div id="project-execution-content" class="mb-12">
+                        <p class="paragraph mb-6">Built with Next.js and Tailwind CSS for rapid load times and fluid transitions.</p>
+                    </div>
 
                 </div>
-                <div class="grid grid-cols-12 gap-6 mb-12">
-                    <div class="col-span-12 sm:col-span-5">
-                        <img class="w-full h-full rounded-[20px]" src="assets/images/blog-details/post1.png" alt="post image">
-                    </div>
-                    <div class="col-span-12 sm:col-span-7">
-                        <img class="w-full h-full rounded-[20px]" src="assets/images/blog-details/post2.png" alt="post image">
+                <!-- Visual Showcase Bento Gallery -->
+                <div class="mb-14">
+                    <h3 class="text-[32px] font-bold font-Syne leading-10 mb-6">Visual Showcase &amp; Brand Bento</h3>
+                    <div id="project-bento-container" class="grid grid-cols-12 gap-5 sm:gap-6">
+                        <!-- Card 1: Wide Rectangle (7 cols) -->
+                        <div class="col-span-12 sm:col-span-7" data-aos="flip-down" data-aos-delay="100">
+                            <div class="overflow-hidden relative rounded-[20px] group shadow-sm hover:shadow-2xl transition-all duration-300 h-[260px] sm:h-[300px] lg:h-[320px] w-full" style="background-color: #246D7D;">
+                                <a href="project-details.html?id=chandi-gharana" class="block w-full h-full relative">
+                                    <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="assets/images/portfolios/project8.png" alt="Chandi Gharana">
+                                    <div class="absolute inset-0 bg-black-800/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-5 sm:p-6 z-10">
+                                        <div class="flex items-center justify-between w-full text-white">
+                                            <div>
+                                                <span class="text-[11px] font-Inter uppercase text-primary font-semibold tracking-wider block mb-1">Featured Work</span>
+                                                <h4 class="font-bold font-Syne leading-tight text-lg sm:text-xl capitalize">Chandi Gharana</h4>
+                                            </div>
+                                            <span class="w-9 h-9 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white flex-shrink-0 group-hover:animate-arrow-move-up">
+                                                <svg width="18" height="18" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M30.8839 9.11612C31.372 9.60427 31.372 10.3957 30.8839 10.8839L10.8839 30.8839C10.3957 31.372 9.60427 31.372 9.11612 30.8839C8.62796 30.3957 8.62796 29.6043 9.11612 29.1161L29.1161 9.11612C29.6043 8.62796 30.3957 8.62796 30.8839 9.11612Z" fill="currentColor"></path>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 10C12.5 9.30964 13.0596 8.75 13.75 8.75H30C30.6904 8.75 31.25 9.30964 31.25 10V26.25C31.25 26.9404 30.6904 27.5 30 27.5C29.3096 27.5 28.75 26.9404 28.75 26.25V11.25H13.75C13.0596 11.25 12.5 10.6904 12.5 10Z" fill="currentColor"></path>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Card 2: Medium Rectangle (5 cols) -->
+                        <div class="col-span-12 sm:col-span-5" data-aos="flip-down" data-aos-delay="200">
+                            <div class="overflow-hidden relative rounded-[20px] group shadow-sm hover:shadow-2xl transition-all duration-300 h-[260px] sm:h-[300px] lg:h-[320px] w-full" style="background-color: #FAF6ED;">
+                                <a href="project-details.html?id=shubha-kuteer" class="block w-full h-full relative">
+                                    <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="assets/images/portfolios/project9.png" alt="Shubha Kuteer">
+                                    <div class="absolute inset-0 bg-black-800/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-5 sm:p-6 z-10">
+                                        <div class="flex items-center justify-between w-full text-white">
+                                            <div>
+                                                <span class="text-[11px] font-Inter uppercase text-primary font-semibold tracking-wider block mb-1">CRM & Platform</span>
+                                                <h4 class="font-bold font-Syne leading-tight text-lg sm:text-xl capitalize">Shubha Kuteer</h4>
+                                            </div>
+                                            <span class="w-9 h-9 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white flex-shrink-0 group-hover:animate-arrow-move-up">
+                                                <svg width="18" height="18" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M30.8839 9.11612C31.372 9.60427 31.372 10.3957 30.8839 10.8839L10.8839 30.8839C10.3957 31.372 9.60427 31.372 9.11612 30.8839C8.62796 30.3957 8.62796 29.6043 9.11612 29.1161L29.1161 9.11612C29.6043 8.62796 30.3957 8.62796 30.8839 9.11612Z" fill="currentColor"></path>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 10C12.5 9.30964 13.0596 8.75 13.75 8.75H30C30.6904 8.75 31.25 9.30964 31.25 10V26.25C31.25 26.9404 30.6904 27.5 30 27.5C29.3096 27.5 28.75 26.9404 28.75 26.25V11.25H13.75C13.0596 11.25 12.5 10.6904 12.5 10Z" fill="currentColor"></path>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Card 3: Small Square (4 cols) -->
+                        <div class="col-span-12 sm:col-span-4" data-aos="flip-down" data-aos-delay="300">
+                            <div class="overflow-hidden relative rounded-[20px] group shadow-sm hover:shadow-2xl transition-all duration-300 h-[220px] sm:h-[240px] lg:h-[260px] w-full" style="background-color: #3F191D;">
+                                <a href="project-details.html?id=vamukh" class="block w-full h-full relative">
+                                    <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="assets/images/portfolios/project10.png" alt="Vamukh">
+                                    <div class="absolute inset-0 bg-black-800/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-5 sm:p-6 z-10">
+                                        <div class="flex items-center justify-between w-full text-white">
+                                            <div>
+                                                <span class="text-[11px] font-Inter uppercase text-primary font-semibold tracking-wider block mb-1">Shopify Store</span>
+                                                <h4 class="font-bold font-Syne leading-tight text-lg sm:text-xl capitalize">Vamukh</h4>
+                                            </div>
+                                            <span class="w-9 h-9 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white flex-shrink-0 group-hover:animate-arrow-move-up">
+                                                <svg width="18" height="18" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M30.8839 9.11612C31.372 9.60427 31.372 10.3957 30.8839 10.8839L10.8839 30.8839C10.3957 31.372 9.60427 31.372 9.11612 30.8839C8.62796 30.3957 8.62796 29.6043 9.11612 29.1161L29.1161 9.11612C29.6043 8.62796 30.3957 8.62796 30.8839 9.11612Z" fill="currentColor"></path>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 10C12.5 9.30964 13.0596 8.75 13.75 8.75H30C30.6904 8.75 31.25 9.30964 31.25 10V26.25C31.25 26.9404 30.6904 27.5 30 27.5C29.3096 27.5 28.75 26.9404 28.75 26.25V11.25H13.75C13.0596 11.25 12.5 10.6904 12.5 10Z" fill="currentColor"></path>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Card 4: Small Square (4 cols) -->
+                        <div class="col-span-12 sm:col-span-4" data-aos="flip-down" data-aos-delay="400">
+                            <div class="overflow-hidden relative rounded-[20px] group shadow-sm hover:shadow-2xl transition-all duration-300 h-[220px] sm:h-[240px] lg:h-[260px] w-full" style="background-color: #F9F9F8;">
+                                <a href="project-details.html?id=serene-saath" class="block w-full h-full relative">
+                                    <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="assets/images/portfolios/project11.png" alt="Serene Saath">
+                                    <div class="absolute inset-0 bg-black-800/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-5 sm:p-6 z-10">
+                                        <div class="flex items-center justify-between w-full text-white">
+                                            <div>
+                                                <span class="text-[11px] font-Inter uppercase text-primary font-semibold tracking-wider block mb-1">HealthTech</span>
+                                                <h4 class="font-bold font-Syne leading-tight text-lg sm:text-xl capitalize">Serene Saath</h4>
+                                            </div>
+                                            <span class="w-9 h-9 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white flex-shrink-0 group-hover:animate-arrow-move-up">
+                                                <svg width="18" height="18" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M30.8839 9.11612C31.372 9.60427 31.372 10.3957 30.8839 10.8839L10.8839 30.8839C10.3957 31.372 9.60427 31.372 9.11612 30.8839C8.62796 30.3957 8.62796 29.6043 9.11612 29.1161L29.1161 9.11612C29.6043 8.62796 30.3957 8.62796 30.8839 9.11612Z" fill="currentColor"></path>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 10C12.5 9.30964 13.0596 8.75 13.75 8.75H30C30.6904 8.75 31.25 9.30964 31.25 10V26.25C31.25 26.9404 30.6904 27.5 30 27.5C29.3096 27.5 28.75 26.9404 28.75 26.25V11.25H13.75C13.0596 11.25 12.5 10.6904 12.5 10Z" fill="currentColor"></path>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Card 5: Small Square (4 cols) -->
+                        <div class="col-span-12 sm:col-span-4" data-aos="flip-down" data-aos-delay="500">
+                            <div class="overflow-hidden relative rounded-[20px] group shadow-sm hover:shadow-2xl transition-all duration-300 h-[220px] sm:h-[240px] lg:h-[260px] w-full" style="background-color: #F5B632;">
+                                <a href="project-details.html?id=winter-shoes" class="block w-full h-full relative">
+                                    <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="assets/images/portfolios/project12.png" alt="Winter Shoes">
+                                    <div class="absolute inset-0 bg-black-800/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-5 sm:p-6 z-10">
+                                        <div class="flex items-center justify-between w-full text-white">
+                                            <div>
+                                                <span class="text-[11px] font-Inter uppercase text-primary font-semibold tracking-wider block mb-1">3D Concept</span>
+                                                <h4 class="font-bold font-Syne leading-tight text-lg sm:text-xl capitalize">Winter Shoes</h4>
+                                            </div>
+                                            <span class="w-9 h-9 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white flex-shrink-0 group-hover:animate-arrow-move-up">
+                                                <svg width="18" height="18" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M30.8839 9.11612C31.372 9.60427 31.372 10.3957 30.8839 10.8839L10.8839 30.8839C10.3957 31.372 9.60427 31.372 9.11612 30.8839C8.62796 30.3957 8.62796 29.6043 9.11612 29.1161L29.1161 9.11612C29.6043 8.62796 30.3957 8.62796 30.8839 9.11612Z" fill="currentColor"></path>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 10C12.5 9.30964 13.0596 8.75 13.75 8.75H30C30.6904 8.75 31.25 9.30964 31.25 10V26.25C31.25 26.9404 30.6904 27.5 30 27.5C29.3096 27.5 28.75 26.9404 28.75 26.25V11.25H13.75C13.0596 11.25 12.5 10.6904 12.5 10Z" fill="currentColor"></path>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Card 6: Medium Rectangle (5 cols) -->
+                        <div class="col-span-12 sm:col-span-5" data-aos="flip-down" data-aos-delay="600">
+                            <div class="overflow-hidden relative rounded-[20px] group shadow-sm hover:shadow-2xl transition-all duration-300 h-[260px] sm:h-[300px] lg:h-[320px] w-full" style="background-color: #FFFDF7;">
+                                <a href="project-details.html?id=pashet" class="block w-full h-full relative">
+                                    <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="assets/images/portfolios/project13.png" alt="Pashet">
+                                    <div class="absolute inset-0 bg-black-800/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-5 sm:p-6 z-10">
+                                        <div class="flex items-center justify-between w-full text-white">
+                                            <div>
+                                                <span class="text-[11px] font-Inter uppercase text-primary font-semibold tracking-wider block mb-1">Luxury Brand</span>
+                                                <h4 class="font-bold font-Syne leading-tight text-lg sm:text-xl capitalize">Pashet</h4>
+                                            </div>
+                                            <span class="w-9 h-9 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white flex-shrink-0 group-hover:animate-arrow-move-up">
+                                                <svg width="18" height="18" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M30.8839 9.11612C31.372 9.60427 31.372 10.3957 30.8839 10.8839L10.8839 30.8839C10.3957 31.372 9.60427 31.372 9.11612 30.8839C8.62796 30.3957 8.62796 29.6043 9.11612 29.1161L29.1161 9.11612C29.6043 8.62796 30.3957 8.62796 30.8839 9.11612Z" fill="currentColor"></path>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 10C12.5 9.30964 13.0596 8.75 13.75 8.75H30C30.6904 8.75 31.25 9.30964 31.25 10V26.25C31.25 26.9404 30.6904 27.5 30 27.5C29.3096 27.5 28.75 26.9404 28.75 26.25V11.25H13.75C13.0596 11.25 12.5 10.6904 12.5 10Z" fill="currentColor"></path>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Card 7: Wide Rectangle (7 cols) -->
+                        <div class="col-span-12 sm:col-span-7" data-aos="flip-down" data-aos-delay="700">
+                            <div class="overflow-hidden relative rounded-[20px] group shadow-sm hover:shadow-2xl transition-all duration-300 h-[260px] sm:h-[300px] lg:h-[320px] w-full" style="background-color: #FEF8EC;">
+                                <a href="project-details.html?id=namma-ashram" class="block w-full h-full relative">
+                                    <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="assets/images/portfolios/project14.png" alt="Namma Ashram">
+                                    <div class="absolute inset-0 bg-black-800/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-5 sm:p-6 z-10">
+                                        <div class="flex items-center justify-between w-full text-white">
+                                            <div>
+                                                <span class="text-[11px] font-Inter uppercase text-primary font-semibold tracking-wider block mb-1">Community Platform</span>
+                                                <h4 class="font-bold font-Syne leading-tight text-lg sm:text-xl capitalize">Namma Ashram</h4>
+                                            </div>
+                                            <span class="w-9 h-9 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white flex-shrink-0 group-hover:animate-arrow-move-up">
+                                                <svg width="18" height="18" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M30.8839 9.11612C31.372 9.60427 31.372 10.3957 30.8839 10.8839L10.8839 30.8839C10.3957 31.372 9.60427 31.372 9.11612 30.8839C8.62796 30.3957 8.62796 29.6043 9.11612 29.1161L29.1161 9.11612C29.6043 8.62796 30.3957 8.62796 30.8839 9.11612Z" fill="currentColor"></path>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 10C12.5 9.30964 13.0596 8.75 13.75 8.75H30C30.6904 8.75 31.25 9.30964 31.25 10V26.25C31.25 26.9404 30.6904 27.5 30 27.5C29.3096 27.5 28.75 26.9404 28.75 26.25V11.25H13.75C13.0596 11.25 12.5 10.6904 12.5 10Z" fill="currentColor"></path>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Card 8: Long Panoramic Banner (12 cols) -->
+                        <div class="col-span-12" data-aos="flip-down" data-aos-delay="800">
+                            <div class="overflow-hidden relative rounded-[20px] group shadow-sm hover:shadow-2xl transition-all duration-300 h-[220px] sm:h-[240px] lg:h-[260px] w-full" style="background-color: #F5B301;">
+                                <a href="project-details.html?id=hoot-and-swirl" class="block w-full h-full relative">
+                                    <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="assets/images/portfolios/project15.png" alt="Hoot & Swirl">
+                                    <div class="absolute inset-0 bg-black-800/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-5 sm:p-6 z-10">
+                                        <div class="flex items-center justify-between w-full text-white">
+                                            <div>
+                                                <span class="text-[11px] font-Inter uppercase text-primary font-semibold tracking-wider block mb-1">Artisanal Brand</span>
+                                                <h4 class="font-bold font-Syne leading-tight text-lg sm:text-xl capitalize">Hoot &amp; Swirl</h4>
+                                            </div>
+                                            <span class="w-9 h-9 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white flex-shrink-0 group-hover:animate-arrow-move-up">
+                                                <svg width="18" height="18" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M30.8839 9.11612C31.372 9.60427 31.372 10.3957 30.8839 10.8839L10.8839 30.8839C10.3957 31.372 9.60427 31.372 9.11612 30.8839C8.62796 30.3957 8.62796 29.6043 9.11612 29.1161L29.1161 9.11612C29.6043 8.62796 30.3957 8.62796 30.8839 9.11612Z" fill="currentColor"></path>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 10C12.5 9.30964 13.0596 8.75 13.75 8.75H30C30.6904 8.75 31.25 9.30964 31.25 10V26.25C31.25 26.9404 30.6904 27.5 30 27.5C29.3096 27.5 28.75 26.9404 28.75 26.25V11.25H13.75C13.0596 11.25 12.5 10.6904 12.5 10Z" fill="currentColor"></path>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="grid grid-cols-1">
-                    <h3 class="text-[32px] font-bold font-Syne leading-10 mb-4">Conclusion</h3>
+                    <h3 class="text-[32px] font-bold font-Syne leading-10 mb-4">Impact & Results</h3>
                 </div>
 
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                    <p class="paragraph">The basic idea was to find a balance between the thin, wispy sans-serif
-                        used to indicate a ‘futuristic‘ tone, and a bold, masculine font synonymous with ‘construction‘.
-                        We came up with something in the middle, leaning towards lighter-weighted fonts, but still with
-                        a hint of that blocky ‘construction’ vibe. We use Chaney for general display and when we want to
-                        drive attention to the content, and the technical and geometric Sora font for the body copy and
-                        paste overall hierachy.</p>
-                    <p class="paragraph">
-                        The basic idea was to find a balance between the thin, wispy sans-serif used to indicate a
-                        ‘futuristic‘ tone, and a bold, masculine font synonymous with ‘construction‘. We came up with
-                        something in the middle, leaning towards lighter-weighted fonts, but still with a hint of that
-                        blocky ‘construction’ vibe.
-                    </p>
+                <div id="project-results-content" class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <p class="paragraph">Delivered a luxury digital presence with immaculate aesthetic alignment, elevating brand trust and driving direct social-to-store customer inquiries.</p>
                 </div>
             </div>
         </section>
@@ -346,53 +496,9 @@
                         </div>
                     </div>
 
-                    <div class="col-span-12 md:col-span-6" data-aos="flip-down">
-                        <div class="rounded-[20px] overflow-hidden mb-6">
-                            <img src="assets/images/projects/project3.png" alt="project1">
-                        </div>
-                        <div class="flex flex-wrap flex-col gap-3">
-                            <div class="flex flex-wrap gap-2">
-                                <a class="text-xs text-black-text-800 uppercase font-medium font-Inter leading-none py-[6px] px-4 rounded-[40px] border border-black-text-400 transition-all hover:bg-active hover:border-active hover:text-white" href="projects.html">APP</a>
-                                <a class="text-xs text-black-text-800 uppercase font-medium font-Inter leading-none py-[6px] px-4 rounded-[40px] border border-black-text-400 transition-all hover:bg-active hover:border-active hover:text-white" href="projects.html">DEVELOPMENT</a>
-
-                            </div>
-                            <div class="flex flex-wrap items-center justify-between text-black-800 hover:text-orange group">
-                                <h4 class="font-bold font-Syne text-center leading-10 text-[17px] sm:text-[20px] xl:text-[24px] 2xl:text-[28px] capitalize">
-                                    <a class="transition-all" href="project-details.html">Basinik Finance App</a>
-                                </h4>
-                                <a href="project-details.html" class="group-hover:animate-arrow-move-up">
-                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M30.8839 9.11612C31.372 9.60427 31.372 10.3957 30.8839 10.8839L10.8839 30.8839C10.3957 31.372 9.60427 31.372 9.11612 30.8839C8.62796 30.3957 8.62796 29.6043 9.11612 29.1161L29.1161 9.11612C29.6043 8.62796 30.3957 8.62796 30.8839 9.11612Z" fill="currentColor" fill-opacity="0.9"></path>
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 10C12.5 9.30964 13.0596 8.75 13.75 8.75H30C30.6904 8.75 31.25 9.30964 31.25 10V26.25C31.25 26.9404 30.6904 27.5 30 27.5C29.3096 27.5 28.75 26.9404 28.75 26.25V11.25H13.75C13.0596 11.25 12.5 10.6904 12.5 10Z" fill="currentColor" fill-opacity="0.9"></path>
-                                    </svg>
-
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-span-12 md:col-span-6" data-aos="flip-down" data-aos-delay="300">
-                        <div class="rounded-[20px] overflow-hidden mb-6">
-                            <img src="assets/images/projects/project4.png" alt="project1">
-                        </div>
-                        <div class="flex flex-wrap flex-col gap-3">
-                            <div class="flex flex-wrap gap-2">
-                                <a class="text-xs text-black-text-800 uppercase font-medium font-Inter leading-none py-[6px] px-4 rounded-[40px] border border-black-text-400 transition-all hover:bg-active hover:border-active hover:text-white" href="projects.html">APP</a>
-                                <a class="text-xs text-black-text-800 uppercase font-medium font-Inter leading-none py-[6px] px-4 rounded-[40px] border border-black-text-400 transition-all hover:bg-active hover:border-active hover:text-white" href="projects.html">DEVELOPMENT</a>
-
-                            </div>
-                            <div class="flex flex-wrap items-center justify-between text-black-800 hover:text-orange group">
-                                <h4 class="font-bold font-Syne text-center leading-10 text-[17px] sm:text-[20px] xl:text-[24px] 2xl:text-[28px] capitalize">
-                                    <a class="transition-all" href="project-details.html">Oxilex Dashboard design</a>
-                                </h4>
-                                <a href="project-details.html" class="group-hover:animate-arrow-move-up">
-                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M30.8839 9.11612C31.372 9.60427 31.372 10.3957 30.8839 10.8839L10.8839 30.8839C10.3957 31.372 9.60427 31.372 9.11612 30.8839C8.62796 30.3957 8.62796 29.6043 9.11612 29.1161L29.1161 9.11612C29.6043 8.62796 30.3957 8.62796 30.8839 9.11612Z" fill="currentColor" fill-opacity="0.9"></path>
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 10C12.5 9.30964 13.0596 8.75 13.75 8.75H30C30.6904 8.75 31.25 9.30964 31.25 10V26.25C31.25 26.9404 30.6904 27.5 30 27.5C29.3096 27.5 28.75 26.9404 28.75 26.25V11.25H13.75C13.0596 11.25 12.5 10.6904 12.5 10Z" fill="currentColor" fill-opacity="0.9"></path>
-                                    </svg>
-
-                                </a>
-                            </div>
+                    <div class="col-span-12">
+                        <div id="related-projects-container" class="grid grid-cols-12 gap-6">
+                            <!-- Dynamically populated by project-details.js -->
                         </div>
                     </div>
                 </div>
@@ -517,6 +623,10 @@
 
     <!-- Activation JS -->
     <script src="assets/js/main.js"></script>
+
+    <!-- Project Data & Hydration JS -->
+    <script src="assets/js/projects-data.js?v=14"></script>
+    <script src="assets/js/project-details.js?v=14"></script>
 
 </body>
 
