@@ -189,14 +189,14 @@
       }
 
       const slots = [
-        { colSpan: "col-span-12 sm:col-span-7", height: "h-[260px] sm:h-[300px] lg:h-[320px]", delay: 100 },
-        { colSpan: "col-span-12 sm:col-span-5", height: "h-[260px] sm:h-[300px] lg:h-[320px]", delay: 200 },
-        { colSpan: "col-span-12 sm:col-span-4", height: "h-[220px] sm:h-[240px] lg:h-[260px]", delay: 300 },
-        { colSpan: "col-span-12 sm:col-span-4", height: "h-[220px] sm:h-[240px] lg:h-[260px]", delay: 400 },
-        { colSpan: "col-span-12 sm:col-span-4", height: "h-[220px] sm:h-[240px] lg:h-[260px]", delay: 500 },
-        { colSpan: "col-span-12 sm:col-span-5", height: "h-[260px] sm:h-[300px] lg:h-[320px]", delay: 600 },
-        { colSpan: "col-span-12 sm:col-span-7", height: "h-[260px] sm:h-[300px] lg:h-[320px]", delay: 700 },
-        { colSpan: "col-span-12", height: "h-[220px] sm:h-[240px] lg:h-[260px]", delay: 800 }
+        { colSpan: "col-span-12 md:col-span-6 lg:col-span-7", cardClass: "bento-card bento-card-lg", delay: 100 },
+        { colSpan: "col-span-12 md:col-span-6 lg:col-span-5", cardClass: "bento-card bento-card-lg", delay: 200 },
+        { colSpan: "col-span-12 md:col-span-4 lg:col-span-4", cardClass: "bento-card bento-card-md", delay: 300 },
+        { colSpan: "col-span-12 md:col-span-4 lg:col-span-4", cardClass: "bento-card bento-card-md", delay: 400 },
+        { colSpan: "col-span-12 md:col-span-4 lg:col-span-4", cardClass: "bento-card bento-card-md", delay: 500 },
+        { colSpan: "col-span-12 md:col-span-6 lg:col-span-5", cardClass: "bento-card bento-card-lg", delay: 600 },
+        { colSpan: "col-span-12 md:col-span-6 lg:col-span-7", cardClass: "bento-card bento-card-lg", delay: 700 },
+        { colSpan: "col-span-12", cardClass: "bento-card bento-card-full", delay: 800 }
       ];
 
       bentoContainer.innerHTML = items.map((item, idx) => {
@@ -208,9 +208,9 @@
 
         return `
           <div class="${slot.colSpan}" data-aos="flip-down" data-aos-delay="${slot.delay}">
-            <div class="overflow-hidden relative rounded-[20px] group shadow-sm hover:shadow-2xl transition-all duration-300 ${slot.height} w-full" style="background-color: ${item.bg || '#ffffff'};">
+            <div class="${slot.cardClass} group" style="background-color: ${item.bg || '#ffffff'};">
               <a href="${link}" ${targetAttr} class="block w-full h-full relative">
-                <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="${item.img}" alt="${item.title}">
+                <img class="bento-card-img" src="${item.img}" alt="${item.title}">
                 <div class="absolute inset-0 bg-black-800/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-5 sm:p-6 z-10">
                   <div class="flex items-center justify-between w-full text-white">
                     <div>
